@@ -21,6 +21,8 @@ public class Exemplo06 {
             JOptionPane.showMessageDialog(null, "Erro de conversão!\n"+ erro.toString(),"Erro",JOptionPane.ERROR_MESSAGE);
         }catch (NullPointerException erro) {
             JOptionPane.showMessageDialog(null, "Tecla cancel pressionada!\n"+ erro.toString(),"Cancelado pelo usuario!",JOptionPane.ERROR_MESSAGE);
+        } finally {
+            JOptionPane.showMessageDialog(null, "Final da execução!");
         }
         System.exit(0);
     }
